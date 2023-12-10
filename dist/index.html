@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - tailwindcss | neumorphic music player</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.2.0/tailwind.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="">
+	<div class="player p-6 mx-auto mt-10">
+		<div class="flex justify-end">
+			<button class="text-gray-700">
+				<svg class="w-5 h-5 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M16 17a3 3 0 0 1-3 3h-2a3 3 0 0 1 0-6h2a3 3 0 0 1 1 .17V1l6-1v4l-4 .67V17zM0 3h12v2H0V3zm0 4h12v2H0V7zm0 4h12v2H0v-2zm0 4h6v2H0v-2z"/></svg>
+			</button>
+		</div>
+		<div class="flex py-10">
+			<img class="m-auto art rounded-lg object-cover w-48 h-48" src="https://www.udiscovermusic.com/wp-content/uploads/2020/10/Pink-Floyd-GettyImages-74290466-1000x600.jpg" alt="">
+		</div>
+		<div class="text-center">
+			<div class="text-sm font-medium text-gray-700">Pink Floyd</div>
+			<div class="text-xs font-semibold tracking-widest text-gray-600 mt-3">Comfortable Numb</div>
+		</div>
+		<div class="mt-10">
+			<div class="h-1 bg-gray-300">
+				<div class="h-full w-2/3 bg-gray-600 hover:bg-gray-800"></div>
+			</div>
+			<div class="flex justify-between mt-1">
+				<span class="text-xs text-gray-600">2:45</span>
+				<span class="text-xs text-gray-600">3:15</span>
+			</div>
+		</div>
+		<div class="flex items-center justify-center mt-10">
+			<button class="play-button w-10 h-10 rounded-full text-gray-500 hover:text-gray-700">
+				<svg class="m-auto w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M4 5h3v10H4V5zm12 0v10l-9-5 9-5z"/></svg>
+			</button>
+			<button class="play-button w-20 h-20 rounded-full flex mx-4 text-gray-700 hover:text-gray-900">
+				<svg class="m-auto w-8 h-8 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M5 4h3v12H5V4zm7 0h3v12h-3V4z"/></svg>
+			</button>
+			<button class="play-button w-10 h-10 rounded-full text-gray-500 hover:text-gray-700">
+				<svg class="m-auto w-6 h-6 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M13 5h3v10h-3V5zM4 5l9 5-9 5V5z"/></svg>
+			</button>
+		</div>
+	</div>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
