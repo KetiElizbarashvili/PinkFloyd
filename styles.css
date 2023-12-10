@@ -1,0 +1,31 @@
+body {
+	background-color: #222;
+}
+canvas {
+	position: absolute;
+	top: calc( 50% - 200px );
+	left: calc( 50% - 50px );
+}
+div {
+	position: absolute;
+	top: calc( 50% - 200px );
+	left: calc( 50% - 300px );
+	width: 230px;
+	height: 360px;
+	padding: 20px 10px 20px 10px;
+	text-align: right;
+	background-color: #181818;
+	font-family: Verdana;
+	color: #ddd;
+}
+div h1 {
+	font-size: 20px;
+}
+div img {
+	width: 200px;
+	margin-right: 15px;
+	margin-top: 20px;
+}
+div p:nth-of-type(3){
+	font-size: 12px;
+} 
