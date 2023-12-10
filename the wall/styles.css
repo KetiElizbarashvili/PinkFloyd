@@ -1,0 +1,97 @@
+:root {
+    --brick-height: 30px;
+    --brick-width: 90px;
+    --brick-border: 1px solid gainsboro;
+    --title-color: #ce0703;
+    --wall-color: white;
+  }
+  
+  html,
+  body {
+    height: 100vh;
+  }
+  
+  html {
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherit;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  
+  svg {
+    color: var(--title-color);
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 70%;
+    max-width: 70%;
+    z-index: 1;
+  }
+  
+  svg g {
+    color: var(--wall-color);
+  }
+  
+  .row {
+    display: flex;
+    height: var(--brick-height);
+  }
+  
+  .row:nth-child(even) {
+    margin-left: calc(var(--brick-width) / 2 * -1);
+  }
+  
+  .brick {
+    animation: fade-in 1s forwards;
+    background-color: white;
+    border-bottom: var(--brick-border);
+    border-right: var(--brick-border);
+    display: flex;
+    flex: 0 0 var(--brick-width);
+    opacity: 0;
+  }
+  
+  @keyframes fade-in {
+    100% { 
+      opacity: 1;
+    }
+  }
+  
+  .row:last-child .brick {
+    border-bottom: 0;
+  }
+  
+  .brick:last-child {
+    border-right: 0;
+  }
+  
+  .trigger {
+    cursor: pointer;
+    flex: 1;
+    outline: 0;
+    position: relative;
+    transition: all linear 0.5s;
+  }
+  
+  .trigger:active,
+  .trigger:focus {
+    box-shadow: inset 3px 3px 7px 0 hsla(0, 0%, 43%, 0.4), 
+                inset 1px 1px 2px 0 hsla(0, 0%, 6%, 0.2);
+  }
+          
+  /* .row:nth-child(5n+0) .trigger:active,
+  .row:nth-child(5n+0) .trigger:focus {
+    box-shadow: inset -3px -3px 7px 0 hsla(0, 0%, 43%, 0.4), 
+                inset -1px -1px 2px 0 hsla(0, 0%, 6%, 0.2);
+  } */ 
